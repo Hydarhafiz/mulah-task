@@ -1,0 +1,118 @@
+/* Apply blue background to the entire body */
+body {
+    background-color: #36A2D0;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style for the container */
+.title {
+    position: absolute;
+    top: 400px; /* Adjust the vertical position */
+    left: 100px; /* Adjust the horizontal position */
+    /* Other styles for the container */
+}
+
+
+/* Apply styles to the h1 element */
+h1 {
+    color: #FFFFFF; /* Set text color to white */
+    font-size: 36px; /* Adjust font size */
+    font-weight: bold; /* Set font weight to bold */
+    text-align: center; /* Center-align the text */
+    font-family: 'Inter',sans-serif;
+}
+
+/* Apply styles to paragraph elements */
+p {
+    color: #333333; /* Set text color to a dark gray */
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Set line height for better readability */
+}
+
+
+.log-in {
+    background-color: #fff; /* White background for the container */
+    position: fixed;
+    width: 50%; /* Set the width to 720px */
+    height: 100%; /* Set the height to 1024px */
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Adjust the content positioning inside the container */
+.log-in-content {
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-in-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.log-in h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.log-in label {
+    margin-bottom: 6px;
+}
+
+.log-in input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.log-in button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.log-in button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 720px) {
+    .log-in {
+        width: 100%; /* Cover full width */
+        height: 100%; /* Cover full height */
+        top: 0;
+        right: 0;
+        border-radius: 0;
+    }
+}
+
